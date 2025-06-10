@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Selection</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2><span class="highlight">YAY! It’s BOGO</span></h2>
+
+      <!-- 1 Unit -->
+      <div class="card" data-id="1">
+        <label class="card-label">
+          <div class="left-section">
+            <input type="radio" name="unit" value="1" checked />
+            <div class="text-section">
+              <div class="unit-row">
+                <strong>1 Unit</strong>
+                <span class="tag tag10">10% Off</span>
+              </div>
+              <p>Standard Price</p>
+            </div>
+          </div>
+          <div class="price-section price1">
+            <span class="price">$10.00 USD</span>
+            <del>$24.00 USD</del>
+          </div>
+        </label>
+
+        <div class="selectors hidden"></div>
+      </div>
+
+      <!-- 2 Unit -->
+      <div class="card" data-id="2">
+        <label class="card-label">
+          <div class="left-section">
+            <input type="radio" name="unit" value="2" />
+            <div class="text-section">
+              <div class="unit-row">
+                <strong>2 Unit</strong>
+                <span class="tag tag20">20% Off</span>
+              </div>
+            </div>
+          </div>
+          <div class="price-section">
+            <span class="price">$18.00 USD</span>
+            <del>$24.00 USD</del>
+          </div>
+          <div class="label-most">MOST POPULAR</div>
+          <div class="label-most label-most-background"></div>
+        </label>
+        <div class="selectors hidden"></div>
+      </div>
+
+      <!-- 3 Unit -->
+      <div class="card" data-id="3">
+        <label class="card-label">
+          <div class="left-section">
+            <input type="radio" name="unit" value="3" />
+            <div class="text-section">
+              <div class="unit-row">
+                <strong>3 Unit</strong>
+                <span class="tag tag30">30% Off</span>
+              </div>
+            </div>
+          </div>
+          <div class="price-section">
+            <span class="price">$24.00 USD</span>
+            <del>$24.00 USD</del>
+          </div>
+        </label>
+        <div class="selectors hidden"></div>
+      </div>
+
+      <div id="totalPrice">
+        <p class="free">Free Delivery</p>
+        <div class="total">
+          Total: <strong id="totalAmount">$10.00 USD</strong>
+        </div>
+      </div>
+
+      <button class="add-cart">+ Add to Cart</button>
+      <p class="powered">@ Powered by Pumper</p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
